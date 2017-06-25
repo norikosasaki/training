@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
   <title>課題</title>
 </head>
 <body>
   <div id=top_box>
-    <div id="top_set_box">
+    <div class="top_set_box">
       <nav id="top_btn">
         <ul class="glovalnav">
           <li><a href="">映画一覧</a></li>
           <li><a href="">お問い合わせ</a></li>
+          <li class="films_nav"><a href="">films</a></li>
         </ul>
       </nav>
 <!--ここからabout-->
@@ -33,7 +35,7 @@
     <li>COMEDY</li>
   </ul>
 </nav>
-<div class="photo_gallery">
+<div class="photo_gallery top_set_box">
   <ul>
     <li><img src="images/film1.jpg" alt=""></li>
     <li><img src="images/film2.jpg" alt=""></li>
@@ -43,11 +45,11 @@
     <li><img src="images/film6.jpg" alt=""></li>
   </ul>
 </div>
-<div class="more">
+<div class="more top_set_box">
   <p>more</p>
 </div>
 <div class="contact">
-<h1>CONTACT</h1>
+<h1><span>CONTACT</span></h1>
 <p>本サイトに関するお問い合わせやご要望はこちらから</p>
 </div>
 <div class="button">
@@ -56,8 +58,8 @@
     <li class="button_a"><a href="">form</a></li>
   </ul>
 </div>
-<footer>
-  <h1>Films</h1>
+<footer id="footer">
+  <h1 class="films">Films</h1>
   <p>copyright 2017 FilmsAllRightsReserved.</p>
 </footer>
 </div>
