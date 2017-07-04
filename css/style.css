@@ -94,36 +94,36 @@ header li {
 }
 /*photo_galleryのnav*/
 .photo_width ul {
-  width: 950px;
+  width: 930px;
   margin: 40px auto 20px;
   overflow: hidden;
 }
 .photo_width li {
   float: left;
-  width: 190px;
+  padding:10px; 
+  width: 160px;
   color: black;
   font-weight: bold;
   text-decoration: none;
 }
-.photo_width li a{
-  color: black;
+.photo_width li:nth-child(5){
+  padding-left: 30px;
+}
+.photo_width ul li a{
+  text-decoration: none;
+  color: #000;
+}
+ .photo_width ul li a:hover {
+  width: 160px;
+  display: block;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
+  background-color: gray;
 }
- .photo_width ul li a:hover{
-  text-decoration: none;
-  color:gray;
-}
- .photo_width ul li:last-child{
-  width: 180px;
-}
-.photo_width ul li:nth-child(1){
-  margin-right: 10px;
-  margin-left: -10px;
-}
-.photo_box ul{
-  margin: 0 auto;
-  width: 950px;
+/*photo_boxのfloat解除*/
+.photo_box　ul {
+  overflow: hidden;
 }
 .photo_box li img {
   float: left;
@@ -185,7 +185,7 @@ header li {
 #footer p {
   padding-bottom: 20px;
 }
-footer h1 {
+footer h2 {
   font-family: 'Lobster', cursive;
 }
 
