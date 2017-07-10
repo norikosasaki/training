@@ -1,83 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/reset.css">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>課題</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>js</title>
 </head>
 <body>
-    <header class="header">
-      <div class="logo">films</div>
-        <nav>
-	        <ul>
-	          <li><a class="btn_topmenu" href="">映画一覧</a></li>
-	          <li><a class="btn_topmenu" href="">お問い合わせ</a></li>
-	        </ul>
-       </nav>
-    </header> 
-     <section class="wrapper main_visual">
-      <div class="container about_box">
-       <div class="about">
-        <h1>About</h1>
-        <p>Filmsは<br>年間約300本の映画を視聴する<br> 運営者がおすすめ映画を<br>皆さまにご紹介させて頂くための<br>Webサイトです。</p>
+    <wrapper>
+      <contain>
+       <div class="btn_caption">
+           <p class="btn1">ボタン１</p>
+           <p class="btn2">ボタン２</p>
+           <p class="btn3">ボタン３</p>
        </div>
-       </div>
-       </section>
-   <section class="wrapper">
-      <div class="container photo_width">
-        <ul>
-          <li><a href="">All</a></li>
-          <li><a href="">ACTION</a></li>
-          <li><a href="">SF</a></li>
-          <li><a href="">ROMANCE</a></li>
-          <li><a href="">COMEDY</a></li>   
-        </ul>
-    </div>
-      <div class="container photo_box">
-        <div class="photo_box1">
-        <a href=""><img src="images/film1.jpg" alt="">
-      	<p>detail</p></a>
-      	</div>
-      	 <div class="photo_box1">
-        <a href=""><img src="images/film1.jpg" alt="">
-      	<p>detail</p></a>
-      	</div>
-      	 <div class="photo_box1">
-        <a href=""><img src="images/film1.jpg" alt="">
-      	<p>detail</p></a>
-      	</div>
-      	 <div class="photo_box1">
-        <a href=""><img src="images/film1.jpg" alt="">
-      	<p>detail</p></a>
-      	</div>
-      	 <div class="photo_box1">
-        <a href=""><img src="images/film1.jpg" alt="">
-      	<p>detail</p></a>
-      	</div>
-      	 <div class="photo_box1">
-        <a href=""><img src="images/film1.jpg" alt="">
-      	<p>detail</p></a>
-      	</div> 	 
-      </div>
-    </section>  
-  <section class="wrapper">
-    <div class="container contact_menu">
-      <h1>contact</h1>
-        <p>本サイトに関するお問い合わせやご要望はこちらから</p>
-    <div class="btn">
-        <ul>
-          <li><a href="">Mail</a></li>
-          <li><a href="">Form</a></li>
-        </ul>
-    </div>
-    </div>
-  </section>
-    <footer id="footer">
-    <!-- 見出し以外にh1は使用しない -->
-      <h2>Films</h2>
-      <p>copyrights2017Films All Rights Reserved.</p>
-    </footer>
-  </body>
+        <div class="photobox">
+            <ul>
+                <li class="active"><img src="images/film1.jpg" alt="写真１"></li>
+                <li class="photo_2"><img src="images/film2.jpg" alt="写真２"></li>
+                <li class="photo_3"><img src="images/film3.jpg" alt="写真３"></li>
+            </ul>
+        </div>
+       </contain>
+    </wrapper>
+<!--jQuery読み込み-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!--ボタンを押すと写真が切り替わる-->
+<script type="text/javascript">
+//写真を一旦全部消す
+//指定したbtnを押すと、指定した画像が出てくる
+    $('.btn1').on('click',function(){
+        $('.photobox li').removeClass('active');
+         });
+    $('.btn1').on('click',function(){
+     $('.active').addClass('active');
+        });
+    $('.btn2').on('click',function(){
+        $('.photo_2').attr('photo_2');
+        });
+    $('.btn3').on('click',function(){
+        $('.photo_3').attr('photo_3');
+        });
+</script> 
+</body>
 </html>
